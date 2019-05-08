@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">SmartCampus</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_activity_index">IndexActivity</string>
+    <string name="title_tools">工具箱</string>
+    <string name="title_curriculum_schedule">课程表</string>
+    <string name="title_message">消息</string>
+    <string name="title_personal_center">个人中心</string>
+
 </resources>

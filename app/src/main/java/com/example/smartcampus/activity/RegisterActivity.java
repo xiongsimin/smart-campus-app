@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if (ValidationUtil.isEmail(et_email.getText().toString().trim())) {
                         //验证验证码非空
                         if (!et_checkCode.getText().toString().trim().equals("")) {
-                            //TODO 邮箱和验证码都合法，发送注册请求
+                            // 邮箱和验证码都合法，发送注册请求
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {

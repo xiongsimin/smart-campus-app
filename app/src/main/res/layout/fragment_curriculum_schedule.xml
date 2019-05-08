@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CurriculumScheduleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/ic_settings" />-->
+
+            <TextView
+                android:id="@+id/tv_week_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="第N周"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_add" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_week_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<TextView
+                        android:id="@+id/tv_first"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第1周" />
+
+                    <TextView
+                        android:id="@+id/tv_second"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第2周" />
+
+                    <TextView
+                        android:id="@+id/tv_third"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第3周" />
+
+                    <TextView
+                        android:id="@+id/tv_fourth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第4周" />
+
+                    <TextView
+                        android:id="@+id/tv_fifth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第5周" />
+
+                    <TextView
+                        android:id="@+id/tv_sixth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第6周" />
+
+                    <TextView
+                        android:id="@+id/tv_seventh"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第7周" />
+
+                    <TextView
+                        android:id="@+id/tv_eighth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第8周" />
+
+                    <TextView
+                        android:id="@+id/tv_ninth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第19周" />
+
+                    <TextView
+                        android:id="@+id/tv_tenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第10周" />
+
+                    <TextView
+                        android:id="@+id/tv_eleventh"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第11周" />
+
+                    <TextView
+                        android:id="@+id/tv_twelfth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第12周" />
+
+                    <TextView
+                        android:id="@+id/tv_thirteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第13周" />
+
+                    <TextView
+                        android:id="@+id/tv_fourteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第14周" />
+
+                    <TextView
+                        android:id="@+id/tv_fifteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第15周" />
+
+                    <TextView
+                        android:id="@+id/tv_sixteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第16周" />
+
+                    <TextView
+                        android:id="@+id/tv_seventeenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第17周" />
+
+                    <TextView
+                        android:id="@+id/tv_eighteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第18周" />
+
+                    <TextView
+                        android:id="@+id/tv_nineteenth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第19周" />
+
+                    <TextView
+                        android:id="@+id/tv_twentieth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第20周" />
+
+                    <TextView
+                        android:id="@+id/tv_twenty_first"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第21周" />
+
+                    <TextView
+                        android:id="@+id/tv_twenty_second"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第22周" />
+
+                    <TextView
+                        android:id="@+id/tv_twenty_third"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第23周" />
+
+                    <TextView
+                        android:id="@+id/tv_twenty_fourth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第24周" />
+
+                    <TextView
+                        android:id="@+id/tv_twenty_fifth"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:text="第25周" />-->
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_warning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:text="月份" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周一" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周二" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周三" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/19" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周四" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周五" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/21" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周六" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周日" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/23" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:45" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:50" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:35" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:05" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:50" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:55" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:40" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="13:30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14:15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14:20" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15:05" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15:35" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16:20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16:25" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="17:10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18:10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18:55" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19:45" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20:05" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20:50" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20:55" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:40" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/lv_monday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_tuesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_wednesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_thursday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_friday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lv_sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none">
+
+                    </ListView>
+                    <!--                    <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightBlue">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightGreen">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorGray">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightOrange">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightGreen">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightOrange">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightPurple">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp"
+                                                android:background="@color/colorLightBlue">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="嵌入式（四教）420多媒体" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="130dp">
+
+                                                &lt;!&ndash;<TextView&ndash;&gt;
+                                                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                                                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                                                &lt;!&ndash;android:text="嵌入式（四教）420多媒体" />&ndash;&gt;
+                                            </LinearLayout>
+                                        </LinearLayout>-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

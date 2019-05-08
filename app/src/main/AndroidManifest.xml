@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.smartcampus">
-
+    <!-- 访问网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +15,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".activity.SetPasswordActivity"></activity>
+        <activity android:name=".activity.ImportScheduleActivity"></activity>
+        <activity android:name=".activity.TermActivity" />
+        <activity android:name=".activity.CurriculumScheduleSettingActivity" />
+        <activity android:name=".activity.PhotoActivity" />
+        <activity android:name=".activity.AttendCampusTimeActivity" />
+        <activity android:name=".activity.MajorActivity" />
+        <activity android:name=".activity.AcademyActivity" />
+        <activity android:name=".activity.CampusActivity" />
+        <activity android:name=".activity.NicknameActivity" />
+        <activity android:name=".activity.EditPersonalDetailsActivity" />
+        <activity android:name=".activity.ColumnActivity" />
+        <activity android:name=".activity.SecondhandMarketActivity" />
+
+        <service
+            android:name=".service.ChatClientService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".activity.PersonalDetailsActivity" />
+        <activity android:name=".activity.SetPasswordActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity
             android:name=".activity.IndexActivity"
